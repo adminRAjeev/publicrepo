@@ -111,6 +111,9 @@ class contactformsubmission
 	   $to = get_option('ncfs_email_send');
 		if(empty($to)){get_option('admin_email');}
 			$headers = "From: " . $user_name . "\r\n";
+			$headers = 'Email: '. $default_email . "\r\n";
+			$headers .=  'Subject: '. $subject . "\r\n";
+			$headers .= 'Reply-To: '. $from_email . "\r\n";
 			$headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
 			if(mail($to,$subject,$mgs,$headers)){
 				echo $successMgs;	
