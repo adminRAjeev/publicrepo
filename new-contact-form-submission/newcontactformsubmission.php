@@ -3,7 +3,7 @@
 * Plugin Name:New Contact Form Submission 
 * Plugin URI:
 * Description: A Plugin to add New Contact Form Submission. Use shortcode [ncfs_contact_form] to display Contact Form for any page/post.
-* Version: 1.0.0
+* Version: 1.0.1
 * Author: Rajeev Chauhan
 * Author URI: mailto:rajeev.glocify@gmail.com
 * Text Domain: contactform
@@ -20,7 +20,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 if ( ! defined( 'VERSION' ) ) {
-	define('VERSION','1.0.0');
+	define('VERSION','1.0.1');
 }
 
 if ( ! class_exists( 'contactformsubmission' ) ) :
